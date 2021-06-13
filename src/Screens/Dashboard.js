@@ -1,15 +1,30 @@
-import React from 'react'
-import { View } from 'react-native'
-import Loader from '../components/Loader'
-import { styles } from './styles'
+import React, {useEffect} from 'react'
+import { getWeatherData } from '../redux/DashboardComponent/DashboardActions'
+import { connect } from 'react-redux';
 
-const Dashboard = () => {
+const Dashboard = (props) => {
+    console.log(props)
+    useEffect(()=>{
+// props.getWeatherData()
+    },[])
     return (
-        <Loader/>
-        // <View style={styles.container}>
-        // </View>
+        <>
 
+        </>
     )
 }
-
-export default Dashboard
+const mapStateToProps = store=>{
+    return{
+        store:store
+    }
+}
+const mapDispatchToProps =dispatch=>{
+    return{
+    getWeatherData:(lat,lon)=>dispatch(getWeatherData(lat,lon))
+    }
+}
+const wrappedDashboard=connect(
+    mapStateToProps,
+    mapDispatchToProps
+    )(Dashboard)
+export default wrappedDashboard
