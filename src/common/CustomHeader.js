@@ -2,7 +2,7 @@ import { useNavigation } from '@react-navigation/core'
 import React from 'react'
 import { Pressable, StyleSheet, Text, View } from 'react-native'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
-import { heightToDp as hp, widthToDp as wp } from '../util/ResponsiveUI'
+import {hp,wp } from '../util/ResponsiveUI'
 import { COLORS, FONTS } from '../constants/styles'
 
 const CustomHeader = ({ title, headerRight }) => {

@@ -2,9 +2,9 @@ import { StyleSheet } from "react-native";
 import { COLORS, FONTS } from "../constants/styles";
 import { 
     height,
-     heightToDp as hp,
+    hp,
       width, 
-      widthToDp as wp
+    wp
      } from "../util/ResponsiveUI";
 
 export const styles = StyleSheet.create({

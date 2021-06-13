@@ -3,12 +3,12 @@
  * Provides universal fonts used in the app.
  */
 export const COLORS = {
-  // PRIMARY: '#880000',
-  // PRIMARY: '#206a5d',
-  PRIMARY: 'rgb(233,0,29)',
+
+  PRIMARY: '#38c172',
   WHITE: '#FFFFFF',
   BLUE: '#2B60DE',
   BLACK: '#000000',
+  TEXT:'rgb(69,69,69)',
   BLACK_SHADE: 'rgba(28,28,30,0.4)',
   GREY: 'grey',
   GREEN: 'green',

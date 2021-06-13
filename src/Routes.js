@@ -5,13 +5,13 @@ import {
     createStackNavigator
 } from '@react-navigation/stack';
 import React from 'react';
-import Dashboard from './Screens/Dashboard';
+import Dashboard from './screens/Dashboard';
 import { CustomStatusBar } from './common';
 const Stack = createStackNavigator();
 const Routes = () => {
     return (
         <NavigationContainer>
-            <CustomStatusBar />
+            {/* <CustomStatusBar /> */}
             <Stack.Navigator
                 initialRouteName={"Dashboard"}
             >

@@ -5,7 +5,7 @@ import promiseMiddleware from 'redux-promise-middleware';
 import dashboardReducer from '../DashboardComponent/DashboardReducer'
 
 let combinedReducer = combineReducers({
-  Dashboard:dashboardReducer
+  dashboard:dashboardReducer
 });
 
 const middleware = applyMiddleware(thunk, promiseMiddleware, logger);

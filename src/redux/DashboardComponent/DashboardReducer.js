@@ -8,7 +8,7 @@ const initialState = {
   pending: false,
   success: false,
   error: false,
-  errorMsg: 'Something Went Wrong at our End',
+  errorMsg: '',
 };
 
 export default function reducer(state = initialState, action) {
@@ -22,13 +22,20 @@ export default function reducer(state = initialState, action) {
     case GET_WEATHER_DATA(CONSTANT_TYPES.REJECTED):{
       return {
         ...state,
-        error:true
+        error:true,
+        pending:false,
+        success:false,
+        errorMsg:'Something Went Wrong at our End'
       }
     }
     case GET_WEATHER_DATA(CONSTANT_TYPES.FULFILLED):{
       return {
         ...state,
-        weatherData:action
+        success:true,
+        pending:false,
+        error:false,
+        errorMsg:'',
+        weatherData:action.payload.data
       }
     }
     default: 

@@ -6,7 +6,7 @@ export const height = Dimensions.get('screen').height;
 let baseWidth = 414;
 let baseHeight = 896;
 
-const widthToDp = (widthPercentage) => {
+const wp = (widthPercentage) => {
   const widthValue =
     typeof widthPercentage == 'number'
       ? widthPercentage
@@ -16,7 +16,7 @@ const widthToDp = (widthPercentage) => {
   );
 };
 
-const heightToDp = (heightPercentage) => {
+const hp = (heightPercentage) => {
   const heightValue =
     typeof heightPercentage == 'number'
       ? heightPercentage
@@ -47,8 +47,8 @@ const removeOreintationListener = () => {
 const statusBarHeight = () => getStatusBarHeight()
 export {
   statusBarHeight,
-  widthToDp,
-  heightToDp,
+  wp,
+  hp,
   addOreintationListener,
   removeOreintationListener,
 };
