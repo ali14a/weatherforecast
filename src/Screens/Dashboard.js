@@ -1,24 +1,29 @@
-import React, { useEffect, useState } from 'react'
+import React, {
+  useEffect,
+  useState
+} from 'react'
 import { getWeatherData } from '../redux/DashboardComponent/DashboardActions'
 import { connect } from 'react-redux';
 import Loader from '../components/Loader';
 import { View, Text, Image } from 'react-native';
 import { CustomButton } from '../common';
-import { hp, wp } from '../util/ResponsiveUI';
-import { COLORS, FONTS } from '../constants/styles';
-import { GEOCODER_API, SERVER_ADDRESS } from '../config/env/ServerConfig';
-
+import { GEOCODER_API } from '../config/env/ServerConfig';
 import Geolocation from 'react-native-geolocation-service';
 import Geocoder from 'react-native-geocoding';
-import moment from 'moment';
 import { styles } from './styles';
+import FontAwesome from 'react-native-vector-icons/FontAwesome'
 const Dashboard = (props) => {
-  const { getWeatherData, pending, error, errorMsg, weatherData } = props
+  const {
+    getWeatherData,
+    pending,
+    error,
+    errorMsg,
+    weatherData
+  } = props
   const [locationError, setLocationError] = useState(false)
-  const [cordinates, setCordinates] = useState({})
   const [city, setCity] = useState('')
   useEffect(() => {
-    // getCurrentLocation()
+    getCurrentLocation()
   }, [])
   const getCurrentLocation = () => {
     Geolocation.PositionError === 1 && setLocationError(true)
@@ -27,12 +32,6 @@ const Dashboard = (props) => {
       (position) => {
         locationError && setLocationError(false)
         getWeatherData(position.coords.latitude, position.coords.longitude)
-
-        setCordinates({
-          latitude: position.coords.latitude,
-          longitude: position.coords.longitude,
-        })
-
         Geocoder.init(GEOCODER_API, { language: "en" });
         Geocoder.from(position.coords.latitude, position.coords.longitude)
           .then(json => {
@@ -77,6 +76,7 @@ const Dashboard = (props) => {
                   <Text style={styles.currentTempText}>
                     {parseInt(weatherData?.current?.temp)}
                   </Text>
+                  <FontAwesome name={"circle-o"} style={styles.degreeIcon} />
                   <Image source={{ uri: `http://openweathermap.org/img/wn/${weatherData.current.weather?.[0].icon}@2x.png` }}
                     style={styles.currentTempIcon} />
                 </View>

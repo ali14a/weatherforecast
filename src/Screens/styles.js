@@ -41,15 +41,18 @@ export const styles = StyleSheet.create({
   currentTempContainer: {
     flexDirection: 'row',
     justifyContent: 'center',
-    alignItems: 'center'
   },
   currentTempText: {
     fontSize: wp(80),
     fontFamily: FONTS.GOOGLESANS_REGULAR
   },
   currentTempIcon: {
+    alignItems: 'center',
     height: hp(60),
     width: wp(60)
+  },
+  degreeIcon: {
+    marginTop: hp(20)
   },
   dailyTempIcon: {
     height: hp(30),

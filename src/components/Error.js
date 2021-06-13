@@ -1,7 +1,7 @@
 import React from 'react';
 import { Modal, View } from 'react-native';
 import { COLORS } from '../constants/styles';
-import {hp, wp } from '../util/ResponsiveUI';
+import { wp } from '../util/ResponsiveUI';
 
 const Error = ({ visible }) => {
   return (
@@ -29,7 +29,7 @@ const Error = ({ visible }) => {
             height: wp(50),
             justifyContent: 'center',
           }}>
-          
+
         </View>
       </View>
     </Modal>

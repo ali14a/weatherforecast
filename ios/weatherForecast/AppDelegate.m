@@ -37,41 +37,41 @@ static void InitializeFlipper(UIApplication *application) {
                                                    moduleName:@"weatherforecast"
                                             initialProperties:nil];
 //
-//  if (@available(iOS 13.0, *)) {
-//      rootView.backgroundColor = [UIColor systemBackgroundColor];
-//  } else {
-//      rootView.backgroundColor = [UIColor whiteColor];
-//  }
-//
-//  self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-//  UIViewController *rootViewController = [UIViewController new];
-//  rootViewController.view = rootView;
-//  self.window.rootViewController = rootViewController;
-//  [self.window makeKeyAndVisible];
+ if (@available(iOS 13.0, *)) {
+     rootView.backgroundColor = [UIColor systemBackgroundColor];
+ } else {
+     rootView.backgroundColor = [UIColor whiteColor];
+ }
+
+ self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+ UIViewController *rootViewController = [UIViewController new];
+ rootViewController.view = rootView;
+ self.window.rootViewController = rootViewController;
+ [self.window makeKeyAndVisible];
   
   
   /* here */
-    UIViewController *rootViewController = [UIViewController new];
+    // UIViewController *rootViewController = [UIViewController new];
 
-    rootViewController.view = rootView;
+    // rootViewController.view = rootView;
 
-    self.window.rootViewController = rootViewController;
-    [self.window makeKeyAndVisible];
+    // self.window.rootViewController = rootViewController;
+    // [self.window makeKeyAndVisible];
 
-    Dynamic *t = [Dynamic new];
-    UIView *animationView = [t createAnimationViewWithRootView:rootView lottieName:@"splash"]; // change lottieName to your lottie files name
-    animationView.backgroundColor = [UIColor whiteColor]; // change backgroundColor
+    // Dynamic *t = [Dynamic new];
+    // UIView *animationView = [t createAnimationViewWithRootView:rootView lottieName:@"splash"]; // change lottieName to your lottie files name
+    // animationView.backgroundColor = [UIColor whiteColor]; // change backgroundColor
 
-    // register LottieSplashScreen to RNSplashScreen
-    [RNSplashScreen showLottieSplash:animationView inRootView:rootView];
+    // // register LottieSplashScreen to RNSplashScreen
+    // [RNSplashScreen showLottieSplash:animationView inRootView:rootView];
 
-    // play
-    [t playWithAnimationView:animationView];
+    // // play
+    // [t playWithAnimationView:animationView];
 
-    // If you want the animation layout to be forced to remove when hide is called, use this code
-    [RNSplashScreen setAnimationFinished:true];
+    // // If you want the animation layout to be forced to remove when hide is called, use this code
+    // [RNSplashScreen setAnimationFinished:true];
 
-    /* here */
+    // /* here */
   
   
   

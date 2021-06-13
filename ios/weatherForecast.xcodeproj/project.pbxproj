@@ -12,18 +12,14 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		26F9AE166B99441084B65B8B /* GoogleSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 986B9A095B434D06A274CD8C /* GoogleSans-Medium.ttf */; };
-		346514070F9F452E8AC14FFF /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D124CD4B9C143ABA2CFBE9F /* Poppins-SemiBold.ttf */; };
 		35BB906DADD34026BD61A145 /* GoogleSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E765BDFB6F6C4EFF919CD8A8 /* GoogleSans-Regular.ttf */; };
 		4F0618B442FD80C775424E8E /* libPods-weatherforecast-weatherforecastTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2A6EC0C1BF1FBDDFC180F42 /* libPods-weatherforecast-weatherforecastTests.a */; };
 		504576A89CF5411FBD7FEAEA /* GoogleSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BBBBE1B8A3640BA871D6A09 /* GoogleSans-Italic.ttf */; };
-		50995C837C5540E69847819D /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCB9D7AB5B564FCF92BE5CA1 /* Poppins-Bold.ttf */; };
 		50F4CF5D6ECC05FB7E1D2419 /* libPods-weatherforecast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B77098106EA7B29AD34F7646 /* libPods-weatherforecast.a */; };
 		6247DC215E274B7A9B1DEB30 /* GoogleSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A9EA0A149194C7898406E9E /* GoogleSans-Bold.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		88F04B2F46BD4CB7B20D6503 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4C3EFE1615441298559B7C6 /* Poppins-Regular.ttf */; };
 		96688A4F2674A34D00D763B7 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96688A4E2674A34D00D763B7 /* Dynamic.swift */; };
 		A97CEAE002C241379FE5E35B /* GoogleSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C2C0109D27A4DEFAE714E13 /* GoogleSans-MediumItalic.ttf */; };
-		CBE7725E9F3D48BBBBB2EE86 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B94C830C4144ECE9D11B888 /* Poppins-Medium.ttf */; };
 		FB452D48FD3148B9BAE02DDE /* GoogleSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92B6387C6FEC490EB1338669 /* GoogleSans-BoldItalic.ttf */; };
 /* End PBXBuildFile section */
 
@@ -254,7 +250,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "weatherForecast" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "weatherforecast" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -293,10 +289,6 @@
 				26F9AE166B99441084B65B8B /* GoogleSans-Medium.ttf in Resources */,
 				A97CEAE002C241379FE5E35B /* GoogleSans-MediumItalic.ttf in Resources */,
 				35BB906DADD34026BD61A145 /* GoogleSans-Regular.ttf in Resources */,
-				50995C837C5540E69847819D /* Poppins-Bold.ttf in Resources */,
-				CBE7725E9F3D48BBBBB2EE86 /* Poppins-Medium.ttf in Resources */,
-				88F04B2F46BD4CB7B20D6503 /* Poppins-Regular.ttf in Resources */,
-				346514070F9F452E8AC14FFF /* Poppins-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -731,7 +723,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "weatherForecast" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "weatherforecast" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
