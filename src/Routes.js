@@ -11,7 +11,7 @@ const Stack = createStackNavigator();
 const Routes = () => {
     return (
         <NavigationContainer>
-            {/* <CustomStatusBar /> */}
+            <CustomStatusBar />
             <Stack.Navigator
                 initialRouteName={"Dashboard"}
             >
@@ -20,7 +20,7 @@ const Routes = () => {
                     component={Dashboard}
                     options={{ headerShown: false }}
                 />
-                </Stack.Navigator>
+            </Stack.Navigator>
         </NavigationContainer>
     )
 }

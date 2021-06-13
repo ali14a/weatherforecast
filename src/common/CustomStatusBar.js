@@ -2,7 +2,7 @@ import React from 'react';
 import { View, StatusBar, StyleSheet } from 'react-native';
 import { COLORS } from '../constants/styles';
 import { statusBarHeight } from '../util/ResponsiveUI';
-const GeneralStatusBar = ({ hidden }) => (
+const CustomStatusBar = ({ hidden }) => (
     <>
         {
 
@@ -13,11 +13,11 @@ const GeneralStatusBar = ({ hidden }) => (
         }
     </>
 )
-export default GeneralStatusBar;
+export default CustomStatusBar;
 
 const styles = StyleSheet.create({
     statusBar: {
         height: statusBarHeight(),
-        backgroundColor: COLORS.PRIMARY,
+        backgroundColor: COLORS.PRIMARY
     }
 })
